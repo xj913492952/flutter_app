@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/Routes.dart' as mRoutes;
+import 'package:flutter_app/splash/GuidePage.dart';
 import 'package:flutter_app/splash/SplashPage.dart';
 
 void main() => runApp(MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: SplashPage(),
+      home: GuidePage(),
       //initialRoute: mRoutes.splashPage, // 名为"/"的路由作为应用的首页
       routes: mRoutes.routes,
     );

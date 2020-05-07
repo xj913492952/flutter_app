@@ -60,7 +60,7 @@ class LoginPageState extends State<LoginPage> {
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                     splashColor: Colors.lightBlueAccent,
                     onPressed: () {
-                      Navigator.popAndPushNamed(context, mRoutes.homePage, arguments:'splash');
+                      Navigator.pushReplacementNamed(context, mRoutes.homePage);
                     },
                   ),
                 )

@@ -26,7 +26,8 @@ class SplashPageState extends State<SplashPage> {
 
   void skipToMain() {
     mTime.cancel();
-    Navigator.popAndPushNamed(context, mRoutes.loginPage, arguments:'splash');
+    mTime = null;
+    Navigator.pushReplacementNamed(context, mRoutes.loginPage);
   }
 
   @override
@@ -44,9 +45,10 @@ class SplashPageState extends State<SplashPage> {
       child: Container(
         alignment: Alignment.center,
         child: Image.asset(
-          'images/img_splash.jpg',
+          'images/2.0x/ic_splash.jpg',
           width: window.physicalSize.width,
           height: window.physicalSize.height,
+          fit: BoxFit.fill,
         ),
       ),
     );
